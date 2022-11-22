@@ -13,7 +13,7 @@ fi
 
 
 
-// largest of 2 numbers
+// largest of 3 numbers
 
 #!/bin/sh
 echo "---FIND THE GREATEST AMONG THREE NUMBERS---"
