@@ -1,0 +1,51 @@
+// find leap year
+
+#!/bin/sh
+echo "LEAP YEAR SHELL SCRIPT"
+echo -n "Enter a year:"
+read year_checker
+if [ `expr $year_checker % 4` -eq 0 ]
+then
+        echo "$year_checker is a leap year"
+else
+        echo "$year_checker is not a leap year"
+fi
+
+
+
+// largest of 2 numbers
+
+#!/bin/sh
+echo "---FIND THE GREATEST AMONG THREE NUMBERS---"
+echo "Enter 1st number:"
+read first_num
+echo "Enter 2nd number:"
+read second_num
+echo "Enter 3rd number:"
+read third_num
+if [ $first_num -gt $second_num ] &&  [ $first_num -gt $third_num ]
+then
+        echo $first_num is the greatest number.
+elif [ $second_num -gt $third_num ]
+then
+        echo $second_num is the greaatest number.
+else
+        echo $third_num is the greatest number.
+fi
+
+
+//find the entered no. is 0 or +ve or -ve
+
+#!/bin/sh
+echo "Enter a number:"
+read a
+if [ $a -eq 0 ]
+then
+echo "$a is 0"
+elif [ $a -gt 0 ]
+then
+echo "$a number is positive"
+else
+echo "$a number is negative"
+fi
+
