@@ -49,3 +49,23 @@ else
 echo "$a number is negative"
 fi
 
+
+
+#!/bin/sh
+echo "enter student  marks:"
+read m 
+if [ $m -lt 0 ] || [ $m -gt 100 ]
+then
+echo "wrong entry"
+elif [ m -lt 40 ]
+then
+ echo "fail"
+elif [ m -gt 60 ] && [ m -lt 70 ]
+then
+ echo "grade c"
+elif [ m -gt 80 ] 
+then
+echo 'grade A'
+else
+echo 's'
+fi
