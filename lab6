@@ -1,0 +1,17 @@
+  GNU nano 6.2                                                                                       52.sh *                                                                                               
+pattern
+
+#!/bin/sh
+for i in $(seq 1 2 10)
+do
+        for k in $(seq 5 1 1)
+        do 
+        echo " "
+done
+        for j in $(seq 1 $i)
+        do
+        echo  -n "*"
+        done
+        echo
+done
+
